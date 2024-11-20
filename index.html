@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.O.S Patinhas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>S.O.S Patinhas</h1>
+        <p>Encontre um novo amigo para adotar!</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#animals">Animais</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Sobre -->
+    <section id="about">
+        <h2>Sobre a Adoção de Animais</h2>
+        <p>A adoção de animais é uma maneira maravilhosa de salvar vidas. Os animais para adoção estão esperando por uma nova família para lhes dar carinho, cuidado e um lar. Adote, não compre!</p>
+    </section>
+
+    <!-- Seção Animais para Adoção -->
+    <section id="animals">
+        <h2>Animais para Adoção</h2>
+        <div class="animal">
+            <img src="https://via.placeholder.com/200x200.png?text=Gato" alt="Gato" class="animal-img">
+            <h3>Gato - Mimi</h3>
+            <p>Idade: 2 anos</p>
+            <button class="adopt-btn">Adotar</button>
+        </div>
+        <div class="animal">
+            <img src="https://via.placeholder.com/200x200.png?text=Cachorro" alt="Cachorro" class="animal-img">
+            <h3>Cachorro - Rex</h3>
+            <p>Idade: 3 anos</p>
+            <button class="adopt-btn">Adotar</button>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact">
+        <h2>Entre em Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="animal">Animal de Interesse:</label>
+            <select id="animal" name="animal" required>
+                <option value="Mimi">Gato - Mimi</option>
+                <option value="Rex">Cachorro - Rex</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="thank-you-message" style="display:none;">Obrigado por entrar em contato! Em breve, responderemos sobre a adoção.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Adoção de Animais | Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
